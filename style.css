@@ -1,0 +1,98 @@
+/* style.css - thème sombre */
+
+body {
+  background-color: #121212; /* fond sombre */
+  color: #e0e0e0; /* texte clair */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1f1f1f; /* header plus foncé */
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+header h1 {
+  margin: 0;
+  color: #ff6b81; /* accent doux pour le titre */
+}
+
+section {
+  padding: 20px;
+}
+
+h2 {
+  color: #ff8c69; /* titre des sections légèrement coloré */
+  margin-bottom: 15px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 107, 129, 0.5);
+}
+
+.journal {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.entry {
+  background-color: #1f1f1f; /* fond des entrées du journal */
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #ff6b81; /* accent color pour démarquer l'entrée */
+  transition: background-color 0.3s;
+}
+
+.entry:hover {
+  background-color: #292929;
+}
+
+.entry h3 {
+  margin-top: 0;
+  color: #ffb07c; /* titre de la date */
+}
+
+.entry p {
+  margin: 5px 0 0 0;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+    #content { display: none; }
+    #login {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #ffe6f0;
+    }
+    #login input { padding: 10px; margin: 5px; font-size: 16px; }
+    #login button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #ff66a3;
+      border: none;
+      color: white;
+      border-radius: 5px;
+    }
+    #login p { color: red; }
