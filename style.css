@@ -177,3 +177,23 @@ h2 {
   line-height: 20px;
   font-size: 12px;
 }
+
+.hero-message {
+  width: 100%;
+  background-color: #ffe066; /* Couleur de fond visible */
+  color: #000; /* Couleur du texte */
+  text-align: center; /* Centre le texte */
+  padding: 50px 20px; /* Espace autour du texte */
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Ombre légère */
+}
+
+.hero-message h1 {
+  font-size: 3em; /* Très grand titre */
+  margin: 0 0 20px 0;
+}
+
+.hero-message p {
+  font-size: 1.5em;
+  margin: 0;
+}
